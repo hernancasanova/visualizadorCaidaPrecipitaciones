@@ -2,15 +2,36 @@ import { INavData } from '@coreui/angular';
 
 export const navItems: INavData[] = [
   {
-    name: 'Dashboard',
+    name: 'Registros',
     url: '/dashboard',
-    iconComponent: { name: 'cil-speedometer' },
-    badge: {
-      color: 'info',
-      text: 'NEW'
-    }
+    iconComponent: { name: 'cil-calendar' },
+    // iconComponent: { name: 'cil-speedometer' },
+    // badge: {
+    //   color: 'info',
+    //   text: 'NEW'
+    // }
   },
   {
+    name: 'Registrar condición diaria',
+    url: '/register',
+    iconComponent: { name: 'cil-pencil' },
+    // iconComponent: { name: 'cil-speedometer' },
+    // badge: {
+    //   color: 'info',
+    //   text: 'NEW'
+    // }
+  },
+  {
+    name: 'Visualizador',
+    url: '/visualizer',
+    iconComponent: { name: 'cil-chart' },
+    // iconComponent: { name: 'cil-speedometer' },
+    // badge: {
+    //   color: 'info',
+    //   text: 'NEW'
+    // }
+  }
+  /*{
     title: true,
     name: 'Theme'
   },
@@ -240,5 +261,5 @@ export const navItems: INavData[] = [
         url: '/500'
       }
     ]
-  },
+  },*/
 ];
