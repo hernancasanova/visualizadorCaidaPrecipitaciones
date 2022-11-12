@@ -25,6 +25,12 @@ export class DashboardComponent implements OnInit {
   constructor(private chartsData: DashboardChartsData) {
   }
 
+  registers: Array<any> = [
+    {date: '01-11-2022', condition: 'lluvia', amount: '5'},//todos los eventos se miden en ml
+    {date: '02-11-2022', condition: 'sol', amount: '0'},
+    {date: '02-11-2022', condition: 'lluvia', amount: '0'},
+  ]
+
   public users: IUser[] = [
     {
       name: 'Yiorgos Avraamu',

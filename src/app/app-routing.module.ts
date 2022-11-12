@@ -6,6 +6,7 @@ import { Page404Component } from './views/pages/page404/page404.component';
 import { Page500Component } from './views/pages/page500/page500.component';
 import { LoginComponent } from './views/pages/login/login.component';
 import { RegisterComponent } from './views/pages/register/register.component';
+import { VisualizerComponent } from './views/visualizer/visualizer.component';
 
 const routes: Routes = [
   {
@@ -29,6 +30,15 @@ const routes: Routes = [
         path: 'theme',
         loadChildren: () =>
           import('./views/theme/theme.module').then((m) => m.ThemeModule)
+      },
+      {
+        path: 'register_condition',
+        loadChildren: () =>
+          import('./views/theme/theme.module').then((m) => m.ThemeModule)
+      },
+      {
+        path: 'visualizer',
+        component: VisualizerComponent
       },
       {
         path: 'base',
